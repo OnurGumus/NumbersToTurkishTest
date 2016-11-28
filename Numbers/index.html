@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+</head>
+<body>
+	<input type="text" style="width:200px;" id="input">
+  <button id="button">Button</button>
+  <br/>
+  <h1>output</h1>
+  <textarea id="result" cols="60"></textarea>
+
+  <!-- [/body] -->
+  <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.41/system.js"></script>
+  <script>
+    System.defaultJSExtensions = true;
+		System.config({
+			map: { 'fable-core': 'node_modules/fable-core/umd' }
+		});
+		SystemJS.import('out/Program.js');
+  </script>
+</body>
+</html>

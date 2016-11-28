@@ -1,0 +1,7 @@
+{
+    "module": "amd",
+    "sourceMaps": true,
+    "projFile": "./Numbers.fsproj",
+    "outDir": "out",
+    "start": "http-server -a localhost -p 8000"
+}
